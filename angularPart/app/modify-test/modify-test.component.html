@@ -1,0 +1,76 @@
+        <div class="image">
+
+          <div class="image">
+            <nav class="navbar navbar-expand navbar-dark" style="background-color:#0abdf3 ;">
+              <div class="navbar-nav">
+                  <a class="nav-item nav-link" routerLink="/CoverPage">Home</a>
+                  <a class="nav-item nav-link" routerLink="/SubjectListComponent">Subjects</a>
+                  <a class="nav-item nav-link" routerLink="/AdminComponent">Admin Portal</a>
+                  <a class="nav-item nav-link" routerLink="/">Logout</a>
+              </div>
+          </nav>
+          
+    <div class="jumbotron container w-50 p-2 bg-transparent text-dark" align="center">
+        <b><h2>Modify Test For Participants</h2></b>
+        <form class="form form-horizontal" #f6="ngForm" (ngSubmit)="delete()">
+          <label>TestID</label>  <input type="text" class="form-control col-sm-4" [(ngModel)]="testId" name="testId"><br>
+           <input type="submit" class="btn btn-primary w-75 p-2" value="Check"><br>
+        </form>
+    </div>
+    <div class="container" align="center">
+        <div class="jumbotron  w-50 p-2 bg-transparent text-dark">
+            <b><h2>Add Test For Participants</h2></b>
+            <form class="form form-horizontal" #f1="ngForm" (ngSubmit)="add()">
+    
+              <label>TestID</label>
+               <input type="text" class="form-control col-sm-4" [(ngModel)]="this.testList.id" name="testId" #UID="ngModel" required minlength="4"><br>
+               
+               <div *ngIf="f1.submitted && UID.invalid">
+                <div *ngIf="UID.errors.required">TestID is required</div>
+              </div>  
+    
+              <label>Topic</label>
+                <input type="text" class="form-control col-sm-4"  [(ngModel)]="this.testList.topic" name="topic" #UID="ngModel" required> <br>
+    
+               <div *ngIf="f1.submitted && UID.invalid">
+                <div *ngIf="UID.errors.required">Required is required</div>
+              </div>  
+                
+              <label>Total Marks </label>
+               <input type="text" class="form-control col-sm-4"  [(ngModel)]="this.testList.marks" name="totalMarks" #UID="ngModel" required ><br>
+    
+               <div *ngIf="f1.submitted && UID.invalid">
+                <div *ngIf="UID.errors.required">Total Marks is required</div>
+              </div>  
+    
+              <label>Passing Marks</label>
+               <input type="text" class="form-control col-sm-4"  [(ngModel)]="this.testList.minMarks" name="minMarks" #UID="ngModel" required ><br>
+    
+               <div *ngIf="f1.submitted && UID.invalid">
+                <div *ngIf="UID.errors.required">Passing Marks is required</div>
+              </div>  
+    
+              <label>Duration</label>
+              <input type="text" class="form-control col-sm-4"  [(ngModel)]="this.testList.duration" name="duration" #UID="ngModel" required ><br>
+    
+               <div *ngIf="f1.submitted && UID.invalid">
+                <div *ngIf="UID.errors.required">Duration is required</div>
+              </div>  
+    
+               <label>Start Time</label> <input type="text" class="form-control col-sm-4"  [(ngModel)]="this.testList.startTime" name="sTime" #UID="ngModel" required minlength="14"><br>
+    
+               <div *ngIf="f1.submitted && UID.invalid">
+                <div *ngIf="UID.errors.required">Start Time is required</div>
+              </div>  
+    
+               <label>End Time</label> <input type="text" class="form-control col-sm-4" [(ngModel)]="this.testList.endTime" name="eTime" #UID="ngModel" required required minlength="14"><br>
+    
+               <div *ngIf="f1.submitted && UID.invalid">
+                <div *ngIf="UID.errors.required">End Time is required</div>
+              </div>  
+    
+               <input class="btn btn-primary w-75 p-2" type="submit" value="ADD TEST">
+            </form>
+        </div>
+        </div>
+        </div>

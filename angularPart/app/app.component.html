@@ -1,0 +1,139 @@
+<!-- //1.PRODUCT LIST FROM ANGULAR TO SPRING REST  -->
+<!-- <body>
+  <div class="jumbotron container w-50 p-2 bg-primary" align="center">
+
+ <form class="form-horizontal text-white" (ngSubmit)="OnSubmit()">
+  <h2 class="text-white">PRODUCT DETAILS</h2>
+  Id <input type="text" class="form-control col-sm-4" [(ngModel)]="id1" name="id1">
+  NAME <input type="text" class="form-control col-sm-4" [(ngModel)]="name1" name="name1">
+  PRICE <input type="text" class="form-control col-sm-4" [(ngModel)]="price1" name="price1">
+ <br>
+  <input type="submit" class="btn btn-info col-sm-4" >
+ <br>
+ </form>
+ </div>
+ </body> -->
+
+
+
+ <!-- <body>
+
+  <div class="container bg-success text-white" align="center">
+    <h2>Student Portal</h2>
+  </div>
+
+  <div class="jumbotron container w-50 p-2 bg-primary text-white" align="center">
+    <h2>Add Student</h2>
+    <form class="form-horizontal " #f1="ngForm" method="get">
+      <input type="submit" class="btn btn-info col-sm-4" value="Add-Student">
+      <div *ngIf="f1.submitted">
+
+        <form class="form-horizontal text-white" (ngSubmit)="addStudent()">
+
+         <h2 class="text-white">Add Details</h2>
+
+         First Name<input type="text" class="form-control col-sm-4" [(ngModel)]="fname" name="fname">
+         Last NAME <input type="text" class="form-control col-sm-4" [(ngModel)]="lname" name="lname">
+         Email <input type="text" class="form-control col-sm-4" [(ngModel)]="email" name="email"><br>
+         <input type="submit" class="btn btn-info col-sm-4" ><br>
+
+         </form>
+      </div>
+    </form>
+  </div>
+  <div class="jumbotron container w-50 p-2 bg-primary text-white" align="center">
+    <h2>All Students</h2>
+    <form class="form-horizontal text-white" #f2="ngForm" method="get" (ngSubmit)="showStudent()">
+      <input type="submit" class="btn btn-info col-sm-4" value="Show-Students">
+      <div *ngIf="f2.submitted">
+        <div class="container jumbotron p-2 " align ="center">
+          <h2 class="text-info">Student List</h2>
+          <table class="table table-hover table-line col-sm-5 table-warning text-dark table-bordered">
+              <tr align="center">
+                <th>ID</th>
+                <th>FIRST-NAME</th>
+                <th>LAST-NAME</th>
+                <th>EMAIL</th>
+                <th>OPERATIONS</th>
+               </tr>
+            <tbody>
+              <tr *ngFor="let student of StudentList">
+                <td>{{student.id}}</td>
+                <td>{{student.firstName}}</td>
+                <td>{{student.lastName}}</td>
+                <td>{{student.email}}</td>
+                <td class="btn btn-group">
+                  
+                <form class="form-horizontal text-white" (ngSubmit)="updateStudent(student.id)">
+                <input type="submit" class="btn btn-success" value="Update">
+                </form>
+              
+                <form class="form-horizontal text-white" (ngSubmit)="deleteStudent(student.id)">
+                <input type="submit" class="btn btn-danger" value="Delete">
+                </form>
+                
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </form>
+
+  </div>
+ </body> -->
+
+
+
+
+
+
+
+
+
+  <!-- <app-add-test></app-add-test>
+  <app-delete-test></app-delete-test>
+  <app-modify-test></app-modify-test>
+  <app-assign-test></app-assign-test> -->
+<!-- <app-login></app-login> -->
+
+
+ <!-- <body>
+  
+  <div class="image">
+  <div class="container" align="center">
+   <div class="jumbotron  bg-transparent text-white" >
+    <b> <h2>WELCOME ADMIN</h2> </b>
+     <form class="form-horizontal text-white" #f1="ngForm" (ngSubmit)="OnAdd()">
+      <button type="submit" class="btn btn-dark w-50 p-2"><a [routerLink]="['/AddTestComponent']"><b>Add Test</b></a></button>
+     </form>
+     <br>
+     <form class="form-horizontal text-white" #f2="ngForm" (ngSubmit)="OnDelete()">
+       <button type="submit" class="btn btn-dark w-50 p-2"><a [routerLink]="['/DeleteTestComponent']"><b>Delete Test</b></a></button>
+     </form>
+     <br>
+     <form class="form-horizontal text-white" #f3="ngForm" (ngSubmit)="OnModify()">
+       <button type="submit" class="btn btn-dark w-50 p-2"><a [routerLink]="['/ModifyTestComponent']"><b>Modify Test</b></a></button>
+     </form>
+     <br>
+     <form class="form-horizontal text-white" #f4="ngForm" (ngSubmit)="OnAssign()">
+       <button type="submit" class="btn btn-dark w-50 p-2"><a [routerLink]="['/AssignTestComponent']"><b>Assign Test</b></a></button>
+     </form>
+   </div>
+   </div>
+   </div>
+   <router-outlet></router-outlet>
+   
+ </body>
+ -->
+
+
+
+
+ <router-outlet></router-outlet>
+
+  <!-- <app-subject-list></app-subject-list> -->
+  <!-- <app-test></app-test> -->
+  <!-- <app-subject-list></app-subject-list> -->
+  <!-- <app-cover-page></app-cover-page> -->
+   

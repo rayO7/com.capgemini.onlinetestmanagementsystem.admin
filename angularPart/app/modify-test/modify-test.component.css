@@ -1,0 +1,52 @@
+.h2, h2 {
+    font-size: 2rem;
+    font-family: fantasy;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-family: fantasy;
+    font-size: 23px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #00dcff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn {
+    font-family: fantasy;
+}
+
+.btn-dark {
+    color: #69edfb;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.w-75 {
+    width: 60%!important;
+}
+
+div {
+    color: #ef2510;
+    font-family: fantasy;
+}
+
+.image{
+    height:70em; 
+    background-size:cover;
+    width:auto;
+    background-image:url('https://cdn.pixabay.com/photo/2019/09/27/05/05/sun-4507532_1280.jpg'); 
+    background-position:50% 50%;
+  } 
